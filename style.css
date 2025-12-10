@@ -1,0 +1,133 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f0f0; /* Light pinkish background */
+    color: #444;
+}
+
+header {
+    background-color: #a37b7b; /* Muted rosy color */
+    color: white;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+main {
+    padding: 40px 50px;
+    display: flex;
+    gap: 50px;
+}
+
+.products {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cart-details {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+}
+
+/* Product Cards Styling */
+.product-card {
+    flex-basis: calc(50% - 15px); /* Two cards per row */
+    border: 1px solid #e0d0d0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.price {
+    font-weight: bold;
+    color: #a37b7b; 
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+/* Button Styling */
+.add-to-cart {
+    background-color: #c99696; /* Rose color */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #a37b7b;
+}
+
+.checkout-button {
+    width: 100%;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+/* Cart Styling */
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#cart-items li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #e0d0d0;
+    font-size: 0.95em;
+}
+
+.total-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #444;
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #a37b7b;
+    color: white;
+    margin-top: 30px;
+}
